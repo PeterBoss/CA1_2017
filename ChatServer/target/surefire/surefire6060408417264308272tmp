@@ -1,0 +1,7 @@
+#surefire
+#Fri Feb 17 11:13:05 CET 2017
+maven.ext.class.path=C\:\\Program Files\\NetBeans 8.2\\java\\maven-nblib\\netbeans-eventspy.jar
+user.dir=C\:\\Users\\Peter\\Documents\\NetBeansProjects\\ChatServer
+file.encoding=UTF-8
+localRepository=C\:\\Users\\Peter\\.m2\\repository
+basedir=C\:\\Users\\Peter\\Documents\\NetBeansProjects\\ChatServer

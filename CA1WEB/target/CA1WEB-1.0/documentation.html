@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Test mod andet hold</h1>
+        <p>
+            Testede min server & client mod gruppe 4. Eneste problem var at
+            jeg havde tilføjet en linie kode til serveren der sendte en velkomst
+            besked når en client tilsluttede, og det gav problemer med deres client 
+            fordi den ikke var logget ind før beskeden blev sendt. 
+        </p>
+        <h2>Design</h2>
+        <p>
+            Startede med at lave en server som vi havde gjort tidligere med Echo serveren.
+            Efter jeg havde fået serveren til at kunne modtage clients, lavede jeg en ny class
+            som Extendede Thread så jeg kunne starte en ny thread for hver client der tilsluttede.
+        </p>
+        <p>
+            ClientThread klassen læser input fra client og fortolker det ift. protokollen. Hvis input er gyldigt
+            sender den det videre til Server klassen for at blive behandlet.
+        </p>
+        <p>
+            Client delen af opgaven har jeg holdt meget simpel. Den kan ca det samme som når man forbinder
+            via telnet, bare med et lidt mere brugervenligt interface. Hvis jeg havde haft mere tid kunne jeg
+            have fået den til at fortolke hvad den modtager istedet for bare at printe det ud, f.eks [Peter says: Hi!]
+            istedet for [MSG#Peter#Hi!] og omvendt så man bare kunne f.eks vælge en bruger fra en liste og skrive en besked,
+            istedet for at skulle skrive [MSG#brugernavn#besked].
+        </p>
+        <h2>How to use</h2>
+        <p>
+            Clienten er simpel at bruge, man starter bare .jar filen og når den beder om det skriver man IP, og derefter port.
+            Man er nødt til at følge protokollen, da der ikke er nogen fortolkning implementeret.
+        </p>
+        <h2>Hvem lavede hvad</h2>
+        <p>It was me! All me! Peter Boss Thomsen</p>
+        <h2>Feedback</h2>
+        <p>
+            Kunne godt lide projektet, synes det kom godt ind på hvad vi havde gennemgået, og kravene var godt formidlet.
+            Jeg havde svært ved at skrive tests til koden, ved ikke om det bare er mig (det er ærligt indrømmet at det er det jeg har sværest ved),
+            havde været rart at høre noget specifikt om hvordan man skriver tests til denne slags kode (Sockets, threads etc.).
+            Det er også rart at I har samlet alting på Github, stor forbedring over Fronter. Har ikke set meget til Moodle endnu.
+            
+            Vedrørende hvad jeg har gjort anderledes, så har jeg været bedre til at starte tidligt på opgaver, og arbejde regelmæssigt.
+        </p>
+
+    </body>
+</html>
